@@ -1,3 +1,5 @@
+org: macasrenata
+app: testeapp
 service: ServerlessReactApp
 
 # Create an optimized package for our functions
