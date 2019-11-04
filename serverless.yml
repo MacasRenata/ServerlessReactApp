@@ -6,10 +6,21 @@ service: ServerlessReactApp
 package:
   individually: true
 
+custom:
+  bundle:
+    sourcemaps: true      # Enable source maps
+    caching: true         # Enable Webpack caching
+    stats: false          # Don't print out any Webpack output
+    linting: true         # Enable linting as a part of the build process
+    copyFiles:            # Copy any additional files to the generated package
+      - from: 'public/*'    # Where the files are currently
+        to: './'            # Where in the package should they go
+
 plugins:
   - serverless-bundle # Package our functions with Webpack
   - serverless-offline
   - serverless-dotenv-plugin # Load .env as environment variables
+  - serverless-bundle
 
 provider:
   name: aws

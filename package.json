@@ -1,10 +1,10 @@
 {
-  "name": "Serverless-API",
+  "name": "SERVERLESS-API",
   "version": "1.1.0",
   "description": "A Node.js starter for the Serverless Framework with async/await and unit test support",
   "main": "handler.js",
   "scripts": {
-    "test": "jest"
+    "test": "serverless-bundle test"
   },
   "author": "Renata Maçãs",
   "license": "MIT",
