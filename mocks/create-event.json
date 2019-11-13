@@ -2,7 +2,7 @@
   "body": "{\"content\":\"hello world\",\"attachment\":\"hello.jpg\"}",
   "requestContext": {
     "identity": {
-      "cognitoIdentityId": "USER-SUB-1234"
+      "cognitoIdentityId": "us-east-1:d7d78450-0303-4c9d-b46c-dddc5c6dc51f"
     }
   }
 }

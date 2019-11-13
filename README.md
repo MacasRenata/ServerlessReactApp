@@ -22,3 +22,10 @@ A Serverless starter that adds ES7 syntax, serverless-offline, linting, environm
 - **No need to manage Webpack or Babel configs**
 
 ---
+
+##### Running on Localhost
+```
+fuser -k 8000/tcp # dynamodb
+fuser -k 9000/tcp # s3
+npm run deploy:production
+```
